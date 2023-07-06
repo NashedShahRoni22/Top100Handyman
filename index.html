@@ -12,8 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
   </head>
   <body>
     <!-- top bar -->
@@ -51,10 +53,10 @@
           </p>
         </a>
         <div
-          class="nav-links duration-500 lg:static absolute z-10 bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] lg:w-auto w-full flex items-center px-5 py-5 lg:py-0"
+          class="nav-links duration-500 lg:static absolute z-10 bg-white min-h-[100vh] lg:min-h-fit left-0 top-[-100%] lg:w-auto w-full flex items-center px-5 py-5 lg:py-0 border-t-2 border-[#ED1B24] md:border-0"
         >
           <ul
-            class="flex lg:flex-row flex-col items-center w-full lg:gap-[4vw] gap-8 text-[16px] text-[#202020] uppercase font-semibold"
+            class="flex lg:flex-row flex-col items-center w-full lg:gap-[4vw] gap-8 text-3xl lg:text-[16px] text-[#202020] uppercase font-semibold"
           >
             <li>
               <a class="hover:text-[#ED1B24]" href="#">Home</a>
@@ -82,7 +84,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <!-- hero banner  -->
       <section class="banner relative h-[60vh] lg:h-[80vh]">
@@ -144,7 +145,9 @@
           Fully Licensed, Bonded, And Insured
         </p>
         <div class="grid md:grid-cols-2 gap-8 mt-10">
-          <div class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer">
+          <div
+            class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer"
+          >
             <i class="fa-solid fa-users text-[36px] text-[#ED1B24]"></i>
             <div>
               <p class="font-semibold text-xl">Certified Handyman</p>
@@ -155,7 +158,9 @@
               </p>
             </div>
           </div>
-          <div class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer">
+          <div
+            class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer"
+          >
             <i class="fa-solid fa-truck text-[36px] text-[#ED1B24]"></i>
             <div>
               <p class="font-semibold text-xl">EMERGENCY SERVICE PROVIDER</p>
@@ -165,7 +170,9 @@
               </p>
             </div>
           </div>
-          <div class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer">
+          <div
+            class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer"
+          >
             <i
               class="fa-solid fa-money-check-dollar text-[36px] text-[#ED1B24]"
             ></i>
@@ -177,7 +184,9 @@
               </p>
             </div>
           </div>
-          <div class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer">
+          <div
+            class="flex gap-4 hover:shadow-xl ease-in-out p-4 cursor-pointer"
+          >
             <i class="fa-solid fa-calendar-days text-[36px] text-[#ED1B24]"></i>
             <div>
               <p class="font-semibold text-xl">YEARS OF EXPERIENCE</p>
@@ -190,41 +199,54 @@
           </div>
         </div>
       </section>
-      <!-- main services  -->
+      <!-- our services  -->
       <section class="service relative h-[100vh] md:h-[80vh]">
         <div class="absolute top-0 h-full w-full bg-black/90 text-white">
           <div class="flex justify-center items-center h-full">
             <div class="mx-5 md:container md:mx-auto my-20">
-              <div class="text-center">
+              <div class="flex flex-col gap-4 items-center">
                 <h2 class="text-3xl font-bold">OUR MAIN SERVICES</h2>
-                <p class="font-semibold text-lg text-[#D1D1D1] mt-3">
+                <div class="h-0.5 w-1/3 bg-[#ED1B24]"></div>
+                <p class="font-semibold text-lg text-[#D1D1D1]">
                   We are open 24x7
                 </p>
               </div>
               <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-10">
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i class="fa-solid fa-bolt text-[#ED1B24] text-[36px]"></i>
                   <p class="text-xl font-bold">Electrical</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i class="fa-solid fa-wrench text-[#ED1B24] text-[36px]"></i>
                   <p class="text-xl font-bold">Plumbing</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i class="fa-solid fa-hammer text-[#ED1B24] text-[36px]"></i>
                   <p class="text-xl font-bold">Carpentry</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i
                     class="fa-solid fa-paint-roller text-[#ED1B24] text-[36px]"
                   ></i>
                   <p class="text-xl font-bold">Painting</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i class="fa-solid fa-water text-[#ED1B24] text-[36px]"></i>
                   <p class="text-xl font-bold">Leakage Repair</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i
                     class="fa-solid fa-trowel-bricks text-[#ED1B24] text-[36px]"
                   ></i>
@@ -233,13 +255,17 @@
                     Installation
                   </p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i
                     class="fa-solid fa-door-open text-[#ED1B24] text-[36px]"
                   ></i>
                   <p class="text-xl font-bold">Door Repair</p>
                 </div>
-                <div class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4">
+                <div
+                  class="flex flex-col items-center gap-4 cursor-pointer shadow-md shadow-[#ED1B24] hover:shadow-none ease-in-out p-4"
+                >
                   <i
                     class="fa-solid fa-lock-open text-[#ED1B24] text-[36px]"
                   ></i>
@@ -250,14 +276,105 @@
           </div>
         </div>
       </section>
+      <!-- what we do  -->
+      <section class="mx-5 md:container md:mx-auto my-20">
+        <div class="lg:flex flex-row-reverse gap-8">
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold">WHO ARE WE?</h2>
+            <div class="accordion mt-10">
+              <div class="accordion-item">
+                <button
+                  class="accordion-header shadow-md w-full flex justify-between items-center p-4"
+                >
+                  <span class="font-semibold flex gap-4 items-center"
+                    ><i class="fa-solid fa-briefcase"></i> About Company</span
+                  >
+                  <span class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="accordion-content p-4 hidden">
+                  <p class="text-justify">
+                    We are committed to being the most trusted local handyman
+                    service provider in Singapore for all your residential,
+                    Commercial & Industrial sectors. <br />We provides a
+                    comprehensive solution for all of your local handyman
+                    services. As an integrated provider of local handyman
+                    services, you can expect to receive all your local handyman,
+                    renovation & demolition requirements done via a WhatsApp
+                    Message. <br />You can book multiple home or handyman
+                    services at a very affordable price, and receive excellent
+                    customer support 24/7.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-header shadow-md w-full flex justify-between items-center p-4"
+                >
+                  <span class="font-semibold flex gap-4 items-center"
+                    ><i class="fa-solid fa-clock"></i>Our Mission</span
+                  >
+                  <span class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="accordion-content p-4 hidden">
+                  <p class="text-justify">
+                    Our organization’s mission is to serve the best quality
+                    local handyman service to all clients of Singapore in a
+                    professional manner.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-header shadow-md w-full flex justify-between items-center p-4"
+                >
+                  <span class="font-semibold flex gap-4 items-center"
+                    ><i class="fa-solid fa-globe"></i>Our Vision</span
+                  >
+                  <span class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="accordion-content p-4 hidden">
+                  <p class="text-justify">
+                    Our organization’s vision is to providing our flexible range
+                    of services is sure to answer most of your house repair and
+                    house improvement needs. Able to meet your demands at your
+                    flexible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="why relative mt-20 lg:mt-0 h-[50vh] lg:w-1/2">
+            <div class="absolute top-0 bg-black/50 w-full h-full">
+              <div class="flex flex-col justify-center h-full p-10 gap-4">
+                <i class="fa-solid fa-thumbs-up text-[72px] text-[#ED1B24]"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Solving problems since 2010
+                </h2>
+                <div class="h-0.5 w-1/3 bg-[#ED1B24]"></div>
+                <p class="text-lg text-white">
+                  We are very proud to be serving our local area for over 12
+                  years!
+                  <br />
+                  You will not wrong to take our services as your business tool.
+                  <br />
+                  We Provide The Best Handyman service in residential,
+                  Commercial & Industrial sectors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- navbar handle script -->
-    <script>
-      const navLinks = document.querySelector(".nav-links");
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[10%]");
-      }
-    </script>
+    <!-- internal js  -->
+    <script src="./app.js"></script>
   </body>
 </html>
