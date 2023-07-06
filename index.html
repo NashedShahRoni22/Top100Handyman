@@ -7,7 +7,7 @@
     <title>Top100Handyman</title>
     <!-- internal css  -->
     <link rel="stylesheet" href="style.css" />
-    <!-- fontawesome icons  -->
+    <!-- icons link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -36,11 +36,11 @@
         <nav class="flex justify-between items-center w-[92%]  mx-auto">
             <a class="flex gap-2 items-center" href="#">
                 <img src="./assets/logo.png" alt="nav_logo" class="w-[50px] h-[50px]">
-                <p class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-red-500 to-purple-600">Top100Handyman</p>
+                <p class="heading font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-red-500 to-purple-600">Top100Handyman</p>
             </a>
             <div
                 class="nav-links duration-500 lg:static absolute z-10 bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5 py-5 lg:py-0">
-                <ul class="flex lg:flex-row flex-col items-center w-full lg:gap-[4vw] gap-8 text-[16px] text-[#202020] uppercase font-semibold">
+                <ul class="regular flex lg:flex-row flex-col items-center w-full lg:gap-[4vw] gap-8 text-[16px] text-[#202020] uppercase font-semibold">
                     <li>
                         <a class="hover:text-red-500" href="#">Home</a>
                     </li>
@@ -66,21 +66,23 @@
     <main class="banner relative h-[60vh] lg:h-[80vh]">
         <div class="absolute top-0 h-full w-full bg-black/80">
             <div class="flex flex-col items-center justify-center h-full">
-                <div class="text-white flex gap-4 items-center font-bold">
+                <div class="heading text-white flex gap-4 items-center font-bold">
                     <p class="text-[32px] lg:text-[52px]">24<span>x</span>7</p>
                 <div class="h-full w-0.5 bg-white"></div>
                 <p>Call us Now <br/> <span class="text-red-500 font-semibold">+65 8578 5018</span> </p>
                 </div>
-                <p class="text-white text-[36px] lg:text-[56px] font-bold uppercase">
+                <p class="heading text-white text-[36px] lg:text-[56px] font-bold uppercase">
                     Need help right away?
                 </p>
-                <p class="text-center font-semibold text-[#D1D1D1] lg:text-[18px]">Since our begining. we have worked tirelessly to earn our <br/> reputation for quality. service and dependability</p>
-                <button class="uppercase px-4 py-2 bg-red-600 text-white mt-5 text-xs lg:text-base border hover:bg-transparent">
+                <p class="regular text-[#D1D1D1] lg:text-[18px]">Since our begining. we have worked tirelessly to earn our <br/> reputation for quality. service and dependability</p>
+                <button class="regular uppercase px-4 py-2 bg-red-600 text-white mt-5 text-xs lg:text-base border hover:bg-transparent">
                     Learn More   
                 </button>
             </div>
         </div>
     </main>
+
+    <!-- navbar handle script -->
     <script>
         const navLinks = document.querySelector('.nav-links')
         function onToggleMenu(e){
