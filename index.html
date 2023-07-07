@@ -45,17 +45,15 @@
             alt="nav_logo"
             class="w-[50px] h-[50px]"
           />
-          <p
-            class="uppercase font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-red-500 to-purple-600"
-          >
+          <p class="uppercase text-[#ED1B24] font-extrabold text-xl">
             Top100Handyman
           </p>
         </a>
         <div
-          class="nav-links duration-500 lg:static absolute z-10 bg-white min-h-[100vh] lg:min-h-fit left-0 top-[-100%] lg:w-auto w-full flex items-center px-5 py-5 lg:py-0 border-t-2 border-[#ED1B24] md:border-0"
+          class="nav-links duration-500 lg:static absolute z-30 bg-white min-h-[100vh] lg:min-h-fit left-0 top-[-100%] lg:w-auto w-full flex items-center px-5 py-5 lg:py-0"
         >
           <ul
-            class="flex lg:flex-row flex-col items-center w-full lg:gap-[4vw] gap-8 text-3xl lg:text-[16px] text-[#202020] uppercase font-semibold"
+            class="flex lg:flex-row flex-col w-full lg:gap-[4vw] gap-8 text-3xl lg:text-[16px] text-[#202020] uppercase font-semibold"
           >
             <li>
               <a class="hover:text-[#ED1B24]" href="#">Home</a>
@@ -63,8 +61,18 @@
             <li>
               <a class="hover:text-[#ED1B24]" href="#">About Us</a>
             </li>
-            <li>
-              <a class="hover:text-[#ED1B24]" href="#">Services</a>
+            <li class="relative group">
+              <p class="hover:text-[#ED1B24] cursor-pointer">Services</p>
+              <ul class="lg:absolute hidden group-hover:block ease-linear bg-white p-5">
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Electrical</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Plumbing</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Painting</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Carpentry</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Door Repair</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Locksmith</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Lekage Repair</a></li>
+                <li><a class="hover:text-[#ED1B24] border-b-1 border-[#ED1B24]" href="#">Wall Mount <br> Installation</a></li>
+              </ul>
             </li>
             <li>
               <a class="hover:text-[#ED1B24]" href="#">Our Works</a>
@@ -74,7 +82,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex items-center gap-6 z-20">
+        <div class="flex items-center gap-6 z-40">
           <ion-icon
             onclick="onToggleMenu(this)"
             name="menu"
@@ -83,9 +91,32 @@
         </div>
       </nav>
     </header>
+    <!-- fixed contact options -->
+    <div
+      class="w-fit fixed top-1/4 right-0 md:left-0 md:top-1/3 lg:top-1/2 group z-20"
+    >
+      <div class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <p class="hidden group-hover:block ease-in-out duration-300">
+          +65 8578 5018
+        </p>
+      </div>
+      <div class="flex gap-4 bg-[#151515] p-3 text-white font-semibold">
+        <i class="fa-solid fa-phone-volume text-xl"></i>
+        <p class="hidden group-hover:block ease-in-out duration-300">
+          +65 8578 5018
+        </p>
+      </div>
+      <div class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold">
+        <i class="fa-solid fa-envelope text-xl"></i>
+        <p class="hidden group-hover:block ease-in-out duration-300">
+          alamripo@yahoo.com
+        </p>
+      </div>
+    </div>
     <main>
       <!-- hero banner  -->
-      <section class="banner relative h-[60vh] lg:h-[80vh]">
+      <section class="banner relative h-[60vh] lg:h-[80vh] z-0">
         <div class="absolute top-0 h-full w-full bg-black/80">
           <div class="flex flex-col items-center justify-center h-full">
             <div class="text-white flex gap-4 items-center font-bold">
@@ -119,8 +150,8 @@
         <div class="bg-[#ED1B24] text-white flex gap-4 items-center p-[40px]">
           <i class="fa-solid fa-map-location-dot text-[36px]"></i>
           <div>
-            <p class="text-[20px]">Partners engineering renovation pte Ltd</p>
-            <p class="text-[14px]">21A Poole Rd, Singapore 437508</p>
+            <p class="text-[20px]">21A Poole Rd</p>
+            <p class="text-[14px]">Singapore 437508</p>
           </div>
         </div>
         <div class="bg-[#151515] text-white flex gap-4 items-center p-[40px]">
@@ -200,8 +231,8 @@
           </div>
         </div>
       </section>
-      <!-- our services  -->
-      <section id="service" class="service relative h-[100vh] md:h-[80vh]">
+      <!-- our main services  -->
+      <section id="service" class="service relative h-[100vh] md:h-[80vh] z-0">
         <div class="absolute top-0 h-full w-full bg-black/90 text-white">
           <div class="flex justify-center items-center h-full">
             <div class="mx-5 md:container md:mx-auto my-20">
@@ -375,9 +406,9 @@
           </div>
         </div>
       </section>
-      <!-- our location -->
+      <!-- our location and email -->
       <section class="mx-5 md:container md:mx-auto my-20">
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center lg:items-start gap-4">
           <h2 class="text-3xl font-bold">CONTACT WITH US</h2>
           <div class="h-0.5 w-1/3 bg-[#ED1B24]"></div>
         </div>
@@ -391,25 +422,33 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="mt-4"
+              class="mt-5"
             ></iframe>
           </div>
-          <div class="flex flex-col gap-4 lg:w-1/2 mt-10 lg:mt-0">
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
             <p class="text-lg font-semibold">Lst us a message</p>
-            <input
-              placeholder="Your Name"
-              class="px-4 py-2 border border-[#ED1B24] focus:outline-none"
-            />
-            <input
-              placeholder="Your Email"
-              class="px-4 py-2 border border-[#ED1B24] focus:outline-none"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows="5"
-              class="px-4 py-2 border border-[#ED1B24] focus:outline-none"
-            ></textarea>
-            <button class="px-4 py-2 bg-[#ED1B24] text-white font-semibold">Send Message</button>
+            <form class="flex flex-col gap-4 shadow-xl p-5 mt-5">
+              <input
+                placeholder="Your Name"
+                class="px-4 py-2 border-2 focus:outline-[#ED1B24]"
+              />
+              <input
+                placeholder="Your Email"
+                class="px-4 py-2 border-2 focus:outline-[#ED1B24]"
+              />
+              <input
+                placeholder="Your Phone"
+                class="px-4 py-2 border-2 focus:outline-[#ED1B24]"
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="8"
+                class="px-4 py-2 border-2 focus:outline-[#ED1B24]"
+              ></textarea>
+              <button class="px-4 py-2 bg-[#ED1B24] text-white font-semibold">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -420,7 +459,7 @@
       const navLinks = document.querySelector(".nav-links");
       function onToggleMenu(e) {
         e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[8%]");
+        navLinks.classList.toggle("top-1");
       }
       //accordion handle
       const accordionItems = document.querySelectorAll(".accordion-item");
