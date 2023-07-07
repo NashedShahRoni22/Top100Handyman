@@ -27,6 +27,13 @@
   background-position: center;
   background-size: cover;
 }
+.service{
+  background: url(./assets/services.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /* accordion design  */
 .accordion-item:not(:last-child) {
