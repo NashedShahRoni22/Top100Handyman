@@ -154,24 +154,30 @@
     <div
       class="w-fit fixed top-1/4 right-0 md:left-0 md:top-1/3 lg:top-1/2 group z-20"
     >
-      <div class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold">
+      <a
+        href="http://wa.me/+6585785018"
+        class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold"
+      >
         <i class="fa-brands fa-whatsapp text-xl"></i>
         <p class="hidden group-hover:block ease-in-out duration-300">
           +65 8578 5018
         </p>
-      </div>
-      <div class="flex gap-4 bg-[#151515] p-3 text-white font-semibold">
+      </a>
+      <a href="tel:+6585785018" class="flex gap-4 bg-[#151515] p-3 text-white font-semibold">
         <i class="fa-solid fa-phone-volume text-xl"></i>
         <p class="hidden group-hover:block ease-in-out duration-300">
           +65 8578 5018
         </p>
-      </div>
-      <div class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold">
+      </a>
+      <a
+        href="mailto:nashedshah@gmail.com"
+        class="flex gap-4 bg-[#ED1B24] p-3 text-white font-semibold"
+      >
         <i class="fa-solid fa-envelope text-xl"></i>
         <p class="hidden group-hover:block ease-in-out duration-300">
           alamripo@yahoo.com
         </p>
-      </div>
+      </a>
     </div>
     <main>
       <!-- hero banner  -->
@@ -660,56 +666,6 @@
       </p>
     </footer>
     <!-- internal js  -->
-    <!-- <script>
-      // navbar handle
-      const navLinks = document.querySelector(".nav-links");
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-1");
-      }
-      //accordion handle
-      const accordionItems = document.querySelectorAll(".accordion-item");
-
-      accordionItems.forEach((item, index) => {
-        const header = item.querySelector(".accordion-header");
-        const icon = item.querySelector(".accordion-icon i");
-        const content = item.querySelector(".accordion-content");
-
-        if (index === 0) {
-          item.classList.add("open");
-          content.classList.remove("hidden");
-          icon.classList.remove("fa-chevron-down");
-          icon.classList.add("fa-chevron-up");
-        }
-
-        header.addEventListener("click", () => {
-          if (item.classList.contains("open")) {
-            item.classList.remove("open");
-            content.classList.add("hidden");
-            icon.classList.remove("fa-chevron-up");
-            icon.classList.add("fa-chevron-down");
-          } else {
-            accordionItems.forEach((otherItem) => {
-              otherItem.classList.remove("open");
-              otherItem
-                .querySelector(".accordion-content")
-                .classList.add("hidden");
-              otherItem
-                .querySelector(".accordion-icon i")
-                .classList.remove("fa-chevron-up");
-              otherItem
-                .querySelector(".accordion-icon i")
-                .classList.add("fa-chevron-down");
-            });
-
-            item.classList.add("open");
-            content.classList.remove("hidden");
-            icon.classList.remove("fa-chevron-down");
-            icon.classList.add("fa-chevron-up");
-          }
-        });
-      });
-    </script> -->
     <script src="./app.js"></script>
   </body>
 </html>
